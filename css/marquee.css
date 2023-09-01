@@ -1,0 +1,55 @@
+.marquee-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .marquee {
+      white-space: nowrap;
+      display: inline-block;
+      animation: marquee 40s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    
+.clignotant {
+  animation: clignotant 3s infinite;
+}
+
+@keyframes clignotant {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/****    ***/
+.password-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.decoration{
+      border-radius: 40px;
+      box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.3);
+}
+.decoration2{
+      border-radius: 10px;
+      box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.3);
+}

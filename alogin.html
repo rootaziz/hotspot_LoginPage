@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<!--   -->
+	<meta http-equiv="X-UA-Compatible" content="IE-edge" >
+	<meta name="apple-mobile-web-app-capable" content="yes" >
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+	<!--   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="1; url=https://www.google.com">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <title>Redirection en cours ...</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/marquee.css">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+	
+	<!---    --->
+	$(if refresh-timeout)
+	<script>
+	<script>
+        setTimeout(function() {
+            window.location.href = "https://www.google.com";
+        }, 1000); // Redirige après 1 secondes (1000 millisecondes)
+    </script>
+	$(endif)
+	<!---    --->
+    <script>
+        function startClock() {
+            $(if popup == 'true')
+            open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
+        $(endif)
+        location.href = unescape'https://www.google.com';
+        }
+
+    </script> 
+</head>
+
+<body onLoad="startClock()">
+    <div class="ie-fixMinHeight">
+        <div class="main">
+		
+			<!--- commun body ---->
+				<div style="text-align: center;">
+				<img class="logo" src="img/logos02.png" alt="#" />
+				</div>
+				<hr />
+				<div class="orange-line"></div>
+				<center>
+				<span class="info bt clignotant orange">
+					<h1>AZIZ ETESS 	</h1>
+				</span>			
+				<div class="orange-line"></div>
+				<hr />
+			<!-- commun body ---->
+            <div class="wrap">
+                <h1>Vous êtes connecté  $(username)</h1>
+                <p class="info">Si rien ne se passe, cliquez sur <a href="url=https://www.issp.bf">ici</a></p>
+            </div>
+			
+			<!--commun footer --->
+				<!--   slider --->
+										
+		
+										
+				<center>
+				<p class="bleu"  style="font-family: 'fontM', sans-serif;">Informations utiles
+				</p>
+				<hr />
+				<div class="orange-line"></div>
+				<p class="vert" >
+				<span class="blanc marquee">Tél: +226 76 90 25 02  /     +226 79 69 37 88   ::  
+											Ouagadougou  Burkina Faso  ::  E_mail: aziz.etess@gmail.com
+				</span>
+				</p>			
+				</center>
+				
+				<script src="js/marquee.js"></script>
+					
+				<!--  slider --->
+				 <div class="orange-line"></div>
+				<hr />
+			<!--commun footer --->
+        </div>
+    </div>
+</body>
+
+</html>

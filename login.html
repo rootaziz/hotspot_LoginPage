@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <title>Connexion AZIZ ETESS</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/marquee.css">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+<center>
+    <!-- two other colors
+
+<body class="lite">
+<body class="dark">
+
+-->
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+
+ 
+    <script src="/md5.js"></script>
+    <script>
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+
+    </script>
+    $(endif)
+    <div class="ie-fixMinHeight">
+        <div class="main">
+            <div class="wrap animated fadeIn">
+			
+                <!-- login_form start -->
+				<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+						<div style="text-align: center;">
+							<img class="logo" src="img/logos02.png" alt="#" />
+						</div>
+						<!--   -->
+						
+						<!-- --->
+						<center>
+						<hr />
+						<div class="orange-line" ></div>
+						
+							<span class="info bt clignotant orange">
+								<h1>AZIZ ETESS 	</h1>
+							</span>			
+							
+							<div class="orange-line"></div>
+							<hr />
+						</center>
+			<center>
+					<div class="container">
+						<span class="bleu" style="font-family: 'fontG', sans-serif; text-align: center;">
+						Bienvenu sur la page de connexion
+						</span>
+						<p class="info $(if error)alert$(endif)">
+							$(if error == "")Veuillez vous connecter pour utiliser le service de point d’accès Internet 
+							<!-- $(if trial == 'yes')
+							<br />Essai gratuit disponible, 
+								<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Cliquez ici</a>.$(endif) -->
+							$(endif)
+
+							$(if error)$(error)$(endif)
+						</p> 
+						
+						<label for="username">
+							<img class="ico" src="img/user.svg" alt="#" />
+							<input name="username" type="text"  placeholder="Identifiant" required />
+						</label>
+						<label for="password" class="password-label">
+							<img class="ico" src="img/password.svg" alt="#" />
+							<input id="password" name="password" type="password" placeholder="Mot de passe" required />
+							<span id="password-toggle" class="password-toggle"></span>
+						  </label>
+						  <script src="js/script.js"></script>
+
+						<input type="submit" value="Connexion" />
+					</div>
+					</center>
+				</form>
+				
+				
+				<!-- login_form end -->
+				<!--   slider --->
+		
+						
+						<center>
+							<p class="bleu"  style="font-family: 'fontM', sans-serif; text-align: center;">Informations utiles
+							</p>
+							  <hr />
+							  <div class="orange-line"></div>
+							<p class="vert" >
+										<span class="blanc marquee">Tél: +226 76 90 25 02  /     +226 79 69 37 88   ::  
+											Ouagadougou  Burkina Faso  ::  E_mail: aziz.etess@gmail.com
+										</span>
+							</p>			
+						</center>
+							
+					
+						<script src="js/marquee.js"></script>
+	
+						<!--  slider --->
+				 <div class="orange-line"></div>
+				<hr />
+            </div>
+        </div>
+    </div>
+	
+	</center>
+</body>
+
+</html>
