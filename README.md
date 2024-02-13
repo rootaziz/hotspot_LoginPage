@@ -35,19 +35,20 @@ Le projet est organisé comme suit :
 
 - `alogin.html`,
 -  `api.json`,
--   `commun.html`,
--    `error.html`,
--    `errors.txt`,
--     `favicon.ico`,
+-  `commun.html`,
+-  `error.html`,
+-  `errors.txt`,
+-  `favicon.ico`,
 -   `login.html`,
 -   `logout.html`,
 -   `md5.js`,
--    `radvert.html`,
+-   `radvert.html`,
 -   `README.md`,
--    `redirect.html`,
--    `rlogin.html`,
--    `status.html`
--    : Fichiers HTML et JavaScript nécessaires pour le portail captif.
+-   `redirect.html`,
+-   `rlogin.html`,
+-   `status.html`
+
+ Fichiers HTML et JavaScript nécessaires pour le portail captif.
 
 - `css/`: Dossier contenant les fichiers CSS pour le style et la mise en page de la page de connexion.
 
@@ -76,7 +77,9 @@ Le projet est organisé comme suit :
 
 ## Contributions
 
-Les contributions sont les bienvenues ! Si vous avez des améliorations à apporter au portail captif ou des idées pour de nouvelles fonctionnalités, n'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+Les contributions sont les bienvenues !
+Si vous avez des améliorations à apporter au portail captif ou des idées pour de nouvelles fonctionnalités,
+n'hésitez pas à ouvrir une issue ou à soumettre une pull request.
 
 ## Licence
 
